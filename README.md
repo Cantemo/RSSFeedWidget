@@ -10,6 +10,10 @@ The following commands download the latest version of this widget, and install i
     unzip master.zip
     cd RSSFeedWidget-master
     ./install.sh
+    
+Restart Portal to load the new Dashboard Widget:
+
+    supervisorctl restart portal
 
 # Usage
 
