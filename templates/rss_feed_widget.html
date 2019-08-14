@@ -14,8 +14,8 @@
             <div id="entry{{ id }}{{ forloop.counter }}"
                  style="padding: 3px 3px 10px 3px; border-bottom: 1px solid rgba(0, 0, 0, 0.2); {% if e.is_new %}display:none{% endif %}">
                 <a target="_blank" href="{{ e.link }}">
-                    {% if e.media_thumbnail  %}
-                        <img style="float: right; padding: 3px" src="{{ e.media_thumbnail.0.url }}"/>
+                    {% if e.media_content  %}
+                        <img style="max-height: 100px; max-width: 100px; float: right; padding: 3px" src="{{ e.media_content.0.url }}"/>
                     {% endif %}
                     <span style="font-weight: bold">{{ e.title }}</span><br>
                     <span style="color: #ccc">{% trans "Posted:" %} {{ e.published }}</span><br>
