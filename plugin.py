@@ -108,7 +108,10 @@ class RSSFeedWidget(Plugin):
 
             def entry_hash(e):
                 # Entries are compared by the results of this function, so e.g. e.is_new does not affect comparison
-                return e.published + e.title
+                if 'published' in e:
+                    return e.published + e.title
+                else:
+                    return e.title
 
             # Combine the new and previous entries into one list, marking which entries are new, and which should
             # be removed
