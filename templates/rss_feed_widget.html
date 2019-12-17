@@ -20,7 +20,7 @@
                     <span style="font-weight: bold">{{ e.title }}</span><br>
                     <span style="color: #ccc">{% trans "Posted:" %} {{ e.published }}</span><br>
                 </a>
-                <p>{{ e.summary|safe }}</p>
+                <p>{{ e.summary|safe|default:"&nbsp;" }}</p>
             </div>
         {% endfor %}
         <p style="color: #ccc">
