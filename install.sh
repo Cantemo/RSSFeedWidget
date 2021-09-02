@@ -13,7 +13,7 @@ sudo mkdir -p $PORTAL_ROOT/portal/plugins/$PLUGIN_NAME
 sudo cp -r $DIR/* $PORTAL_ROOT/portal/plugins/$PLUGIN_NAME
 
 # Install required library
- /opt/cantemo/python/bin/pip install feedparser==6.0.4
+/opt/cantemo/python/bin/pip install feedparser==6.0.4
 
 echo "Done."
 echo "Restart Portal: supervisorctl restart portal"
